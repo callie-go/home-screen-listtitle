@@ -10,9 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter Demo',
-      home: HomeScreen(),
-    );
+    return const MaterialApp(title: 'Flutter Demo', home: HomeScreen());
   }
 }
