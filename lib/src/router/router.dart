@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_screen_listtile/src/feature/home/view/home_screen.dart';
+import 'package:home_screen_listtile/src/feature/row_column/views/row_column_screen.dart';
 import 'package:home_screen_listtile/src/router/route_names.dart';
 
 class AppRouter {
@@ -9,6 +10,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (context) {
             return const HomeScreen();
+          },
+        );
+      case RouterNames.rowAndColumn:
+        return MaterialPageRoute(
+          builder: (context) {
+            return const RowColumnPage();
           },
         );
       default:
