@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen_listtile/src/feature/container_decoration/view/container_decoration_screen.dart';
 import 'package:home_screen_listtile/src/feature/home/view/home_screen.dart';
 import 'package:home_screen_listtile/src/router/route_names.dart';
 
@@ -9,6 +10,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (context) {
             return const HomeScreen();
+          },
+        );
+      case RouterNames.card:
+        return MaterialPageRoute(
+          builder: (context) {
+            return const ConTainerDecorationScreen();
           },
         );
       default:
