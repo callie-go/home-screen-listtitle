@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_screen_listtile/src/feature/bottom_appbar_btn_action/views/screen_bottom_appbar_btn_action.dart';
 import 'package:home_screen_listtile/src/feature/home/view/home_screen.dart';
 import 'package:home_screen_listtile/src/router/route_names.dart';
 
@@ -9,6 +10,12 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (context) {
             return const HomeScreen();
+          },
+        );
+      case RouterNames.bottomAppBar:
+        return MaterialPageRoute(
+          builder: (context) {
+            return const BottomAppbarBtnActionScreen();
           },
         );
       default:
